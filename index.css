@@ -1,0 +1,106 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("Galaxy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin: 320px auto;
+  background-color: red;
+}
+
+.container .div-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .img-sun {
+  width: 300px;
+  animation: sun-animation 90s linear infinite;
+}
+
+@keyframes  sun-animation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+/* ---------------------------------------------------- */
+.container .div-earth {
+  animation: container-earth 35s linear infinite;
+}
+@keyframes container-earth {
+  from {
+    transform: rotate(0deg) translate(350px);
+  }
+  to {
+    transform: rotate(360deg) translate(350px);
+  }
+}
+
+.container .img-earth {
+  width: 80px;
+  animation: earth-animation 25s linear infinite;
+}
+@keyframes earth-animation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* ------------------------------------------------------- */
+.container .div-neptun {
+  animation: container-neptun 20s linear infinite;
+}
+@keyframes container-neptun {
+  from {
+    transform: rotate(0deg) translate(290px);
+  }
+  to {
+    transform: rotate(360deg) translate(290px);
+  }
+}
+
+.container .img-neptun {
+  width: 80px;
+  animation: neptun-animation 30s linear infinite;
+}
+
+@keyframes neptun-animation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* -------------------------------------------------------------- */
+.container .div-venus {
+  
+  animation: container-venus 10s linear infinite;
+}
+
+@keyframes container-venus {
+  from {
+    transform: rotate(0deg) translate(190px);
+  }
+  to {
+    transform: rotate(360deg) translate(190px);
+  }
+}
+.container .img-venus {
+  width: 40px;
+  animation: venus-animation 10s linear infinite;
+}
+@keyframes venus-animation {
+  0% {
+    transform: rotate(-360deg);
+  }
+}
